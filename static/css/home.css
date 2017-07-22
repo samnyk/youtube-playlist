@@ -1,0 +1,42 @@
+.background-container{
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: url("../resources/background2.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(3px);
+}
+
+.area{
+    z-index: 3;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    transform: translate(-40%,-45%);
+    font-weight: bolder;
+    color: #797c7f;
+}
+
+h1{
+color: #777;
+
+}
+.container button a{
+    color: white;
+}
+
+.container button {
+    margin: 0 auto;
+}
+
+
+.button{
+    margin: 10px;
+    width: 200px;
+}

@@ -1,0 +1,53 @@
+.background-container{
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: url("../resources/background2.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(3px);
+}
+
+.login-form-1{
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:rgba(248, 248, 248, 0.9);
+    border: 1px solid #e6e0e0;
+    border-radius: 50px;
+    padding: 40px;
+    width: 400px;
+    display: inline-block;
+}
+
+
+.login-form-1 h1{
+    color: #c7c7c7;
+    text-align: center;
+    padding: 20px;
+}
+.nouser{
+    text-align: left;
+    margin-top: 20px;
+}
+
+.link-tag{
+    text-decoration: none;
+    color: #333;
+}
+
+
+
+
+.link-tag{
+    text-decoration: none;
+    color: #333;
+}
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="stylesheet" type="text/css" href="/css/mystyle.css">
+
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-route.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-messages.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-sanitize.min.js"></script>
+    <script src="/js/password-confirm.js"></script>
+    <script src="/js/angular-css.js"></script>
+    <script src="/app.js"></script>
+
+    <script src="/controllers/registercontroller.js"></script>
+    <script src="/controllers/logincontroller.js"></script>
+    <script src="/controllers/myvideocontroller.js"></script>
+    <script src="/controllers/navdirective.js"></script>
+
+</head>
+
+<body ng-app="youtubeApp">
+
+<navdirective></navdirective>
+
+<div id="main">
+
+    <div ng-view>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

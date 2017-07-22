@@ -1,0 +1,21 @@
+<div class="background-container"></div>
+<div class="container">
+	<div class="area">
+		<h1 ng-if="isLogedIn">Welcome back <strong> {{thisUser.username}} </strong></h1>
+		<button class="col-md-12 btn btn-info btn-lg" ng-show="isLogedIn"><a href="#myvideos" ><i class="fa fa-youtube" aria-hidden="true"></i> Go to your videos</a></button>
+
+		<h1 ng-if="!isLogedIn">Welcome to Youtube playlist </h1>
+		<div class="col-md-6">
+			<a href="#login" ><button class=" button col-md-6 btn btn-info btn-lg" ng-show="!isLogedIn">
+				<i class="fa fa-user" aria-hidden="true"></i> Login
+			</button></a>
+		</div>
+		<div class="col-md-6">
+			<a href="#register" ><button class="button btn btn-info  btn-lg" ng-show="!isLogedIn">
+				<i class="fa fa-plus" aria-hidden="true"></i> Register
+			</button></a>
+		</div>
+	</div>
+
+
+</div>

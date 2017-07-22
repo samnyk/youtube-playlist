@@ -1,0 +1,65 @@
+<div class="background-container"></div>
+<div class="containers">
+	<div class="login-form-1">
+		<form id="register-form" role="form" ng-submit="submit()" name="registrationForm" class="text-left" novalidate  >
+			<h1>REGISTER</h1>
+
+			<div class="main-login-form">
+				<div class="login-group">
+					<div class="form-group">
+						<input  type="text"
+								name="username"
+								class="form-control"
+								placeholder="username"
+								ng-model="user.username"
+								ng-required="true">
+						<div ng-show="registrationForm.username.$touched && registrationForm.username.$invalid">
+							<small style="color:red; text-align: center;">Enter a valid Username</small>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<input type="email" ng-model="user.email" name="email" class="form-control" placeholder="email" ng-required="true">
+					<div ng-show="registrationForm.email.$touched && registrationForm.email.$invalid">
+						<small style="color:red; text-align: center;">Enter a valid Email</small>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<input  ng-model="user.password" type="password" name="password" class="form-control" id="password" placeholder="password" ng-required="true">
+					<div ng-show="registrationForm.password.$touched && registrationForm.password.$invalid">
+						<small style="color:red; text-align: center;">Enter a valid Password</small>
+					</div>
+				</div>
+				<div class="form-group">
+					<input  ng-model="user.repassword" type="password" name="rePassword" class="form-control" placeholder="confirm password" match-password="password" ng-required="true">
+					<div ng-show="registrationForm.rePassword.$touched && registrationForm.rePassword.$invalid">
+						<small style="color:red; text-align: center;">Enter a valid Password confirm</small>
+					</div>
+					<div ng-messages="registrationForm.rePassword.$error" ng-if="registrationForm.rePassword.$dirty">
+						<small ng-message="passwordMatch" style="color:red; text-align: center;">Your passwords did not match</small>
+					</div>
+
+				</div>
+
+
+
+
+				<button type="submit" ng-disabled="registrationForm.$invalid" class="btn btn-default">Register</button>
+			</div>
+			<div class="nouser" ng-show="failedLog">
+				<p><strong class="text-danger">Please check form details!</strong><br/>
+					<span class="text-danger">*Password must be at least 4 characters</span>
+				</p>
+			</div>
+			<div class="nouser">already have an account?<br/> <a class="link-tag" href="#login">
+				<i class="fa fa-user" aria-hidden="true"></i> click to login</a>
+			</div>
+
+
+		</form>
+	</div>
+
+</div>
+
